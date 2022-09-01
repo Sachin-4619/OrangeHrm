@@ -20,8 +20,6 @@ public class LoginPage {
 
     }
 
-
-
     public void login() throws InterruptedException{
         driver.manage().window().maximize();
         Thread.sleep(5000);
@@ -29,6 +27,7 @@ public class LoginPage {
         driver.findElement(password).sendKeys("admin123");
         driver.findElement(submit).click();
     }
+
 
 }
 

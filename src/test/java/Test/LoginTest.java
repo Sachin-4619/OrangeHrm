@@ -5,7 +5,10 @@ public class LoginTest extends BaseClass {
     {
         setup();
         Pagefactory.getLoginpage().login();
-
-
+        Pagefactory.getMenuBar().Admin();
+        Pagefactory.getAddUser().Click();
     }
+
+
+
 }
