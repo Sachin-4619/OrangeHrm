@@ -20,9 +20,9 @@ import org.openqa.selenium.support.ui.Select;
         {
             driver.findElement(dropdown).click();
             driver.findElement(adminbtn).click();
-//            driver.findElement(dropdown2).click();
-//            driver.findElement(status).click();
-//            driver.findElement(password).sendKeys("Sachin");
+            driver.findElement(dropdown2).click();
+            driver.findElement(status).click();
+            driver.findElement(password).sendKeys("Sachin");
         }
     }
 
