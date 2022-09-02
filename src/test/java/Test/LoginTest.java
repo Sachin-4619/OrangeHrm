@@ -7,6 +7,7 @@ public class LoginTest extends BaseClass {
         Pagefactory.getLoginpage().login();
         Pagefactory.getMenuBar().Admin();
         Pagefactory.getAddUser().Click();
+        Pagefactory.getAddUser1().User();
     }
 
 

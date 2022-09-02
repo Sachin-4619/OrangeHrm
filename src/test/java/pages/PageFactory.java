@@ -11,6 +11,7 @@ public class PageFactory {
 
     private LoginPage loginpage;
     private MenuBar MenuBar;
+
     
 
     public PageFactory(WebDriver driver) {
@@ -37,6 +38,15 @@ public class PageFactory {
         }
         return AddUser;
         
+    }
+    public AddUser1 getAddUser1(){
+        AddUser AddUser = null;
+        if (AddUser == null) {
+            AddUser = new AddUser(driver);
+        }
+        AddUser1 AddUser1 = null;
+        return AddUser1;
+
     }
 }
         
