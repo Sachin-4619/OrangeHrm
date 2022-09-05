@@ -16,7 +16,8 @@ public class BaseClass {
 
     }
 
-    public void close() {
+    public void close()
+    {
         driver.close();
     }
 

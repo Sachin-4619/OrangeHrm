@@ -10,11 +10,15 @@ public class PageFactory {
 
 
     private LoginPage loginpage;
-    private MenuBar MenuBar;
+    private MenuBar menuBar;
+    private AddUser addUser;
+    private AddUser1 addUser1;
+
 
     
 
-    public PageFactory(WebDriver driver) {
+    public PageFactory(WebDriver driver)
+    {
         this.driver = driver;
     }
 
@@ -26,26 +30,23 @@ public class PageFactory {
 
     }
     public  MenuBar getMenuBar() {
-        if (MenuBar == null) {
-            MenuBar = new MenuBar(driver);
+        if (menuBar == null) {
+            menuBar = new MenuBar(driver);
         }
-        return MenuBar;
+        return menuBar;
     }
     public AddUser getAddUser(){
-        AddUser AddUser = null;
-        if (AddUser == null) {
-            AddUser = new AddUser(driver);
+        if (addUser == null) {
+            addUser = new AddUser(driver);
         }
-        return AddUser;
+        return addUser;
         
     }
     public AddUser1 getAddUser1(){
-        AddUser AddUser = null;
-        if (AddUser == null) {
-            AddUser = new AddUser(driver);
+        if (addUser1 == null) {
+            addUser1 = new AddUser1(driver);
         }
-        AddUser1 AddUser1 = null;
-        return AddUser1;
+        return addUser1;
 
     }
 }

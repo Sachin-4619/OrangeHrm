@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.time.Duration;
+
 public class LoginPage {
 
     WebDriver driver;
@@ -22,7 +24,7 @@ public class LoginPage {
 
     public void login() throws InterruptedException{
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.findElement(username).sendKeys("Admin");
         driver.findElement(password).sendKeys("admin123");
         driver.findElement(submit).click();
